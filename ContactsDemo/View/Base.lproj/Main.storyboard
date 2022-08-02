@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Persons List-->
+        <!--Persons List 1-->
         <scene sceneID="cg9-uY-3IA">
             <objects>
-                <tableViewController id="7Bs-Po-cpr" sceneMemberID="viewController">
+                <tableViewController id="7Bs-Po-cpr" customClass="ContactsFullNameTableViewController" customModule="ContactsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ngh-fH-KiB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,16 +39,16 @@
                             <outlet property="delegate" destination="7Bs-Po-cpr" id="G1D-Po-bi4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Persons List" id="jD6-SH-B6H"/>
+                    <navigationItem key="navigationItem" title="Persons List 1" id="jD6-SH-B6H"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBc-VV-Ycc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2129" y="-206"/>
         </scene>
-        <!--Persons List-->
+        <!--Persons List 2-->
         <scene sceneID="Wlt-gw-3kB">
             <objects>
-                <tableViewController id="uav-W8-xCt" sceneMemberID="viewController">
+                <tableViewController id="uav-W8-xCt" customClass="ContactsFullInfoTableViewController" customModule="ContactsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uYT-2T-9Cr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="uav-W8-xCt" id="SEa-49-0vV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Persons List" id="J1c-KG-pJh"/>
+                    <navigationItem key="navigationItem" title="Persons List 2" id="J1c-KG-pJh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sei-Mk-kBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
