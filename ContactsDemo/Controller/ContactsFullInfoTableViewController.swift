@@ -27,28 +27,27 @@ class ContactsFullInfoTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
         cell.contentConfiguration = content
-        
-        cell.backgroundColor = .systemGray6
         return cell
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let person = contacts[indexPath.section]
+        var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
-            let person = contacts[indexPath.section]
-            var content = cell.defaultContentConfiguration()
             content.image = UIImage(systemName: "phone")
             content.text = person.phoneNumber
-            cell.contentConfiguration = content
         } else {
-            let person = contacts[indexPath.section]
-            var content = cell.defaultContentConfiguration()
             content.image = UIImage(systemName: "envelope")
             content.text = person.email
-            cell.contentConfiguration = content
         }
         
+        cell.contentConfiguration = content
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.backgroundColor = .systemGray5
     }
 }
