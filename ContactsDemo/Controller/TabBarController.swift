@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    private let contacts = DataManager.shared.fetchContacts()
+    private let contacts = Person.getContacts()
 
     override func viewDidLoad() {
         super.viewDidLoad()

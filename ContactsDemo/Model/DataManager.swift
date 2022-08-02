@@ -8,7 +8,7 @@
 class DataManager {
     static let shared = DataManager()
     
-    private var names = [
+    let names = [
         "Nicola",
         "Bruce",
         "John",
@@ -21,7 +21,7 @@ class DataManager {
         "Allan"
     ]
     
-    private var surnames = [
+    let surnames = [
         "Smith",
         "Robertson",
         "Williams",
@@ -34,7 +34,7 @@ class DataManager {
         "Murphy"
     ]
     
-    private var emails = [
+    let emails = [
         "crazy535@cluud.com",
         "mad.joker29@cluud.com",
         "bad.boy11@cluud.com",
@@ -47,7 +47,7 @@ class DataManager {
         "appleForever.apple99@cluud.com"
     ]
     
-    private var phoneNumbers = [
+    let phoneNumbers = [
         "3-00-535-10001",
         "3-91-446-29002",
         "3-82-357-38003",
@@ -59,26 +59,6 @@ class DataManager {
         "3-28-713-92009",
         "3-19-624-01010"
     ]
-    
-    func fetchContacts() -> [Person] {
-        var contacts = [Person]()
-        
-        let minimumElementCount = min(names.count, surnames.count, emails.count, phoneNumbers.count)
-        
-        names.shuffle()
-        surnames.shuffle()
-        emails.shuffle()
-        phoneNumbers.shuffle()
-        
-        for index in 0...minimumElementCount - 1 {
-            contacts.append(Person(name: names[index],
-                                   surname: surnames[index],
-                                   email: emails[index],
-                                   phoneNumber: phoneNumbers[index]))
-        }
-        
-        return contacts
-    }
     
     private init() {}
 }
