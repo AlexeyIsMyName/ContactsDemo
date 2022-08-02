@@ -9,7 +9,7 @@ struct Person {
     let name: String
     let surname: String
     let email: String
-    let phone: String
+    let phoneNumber: String
     
     var fullName: String {
         return "\(name) \(surname)"
