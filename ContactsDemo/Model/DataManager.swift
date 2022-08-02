@@ -6,7 +6,7 @@
 //
 
 class DataManager {
-    let shared = DataManager()
+    static let shared = DataManager()
     
     private var names = [
         "Nicola",

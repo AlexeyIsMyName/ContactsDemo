@@ -8,9 +8,11 @@
 import UIKit
 
 class TabBarController: UITabBarController {
+    
+    private let contacts = DataManager.shared.fetchContacts()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 }
