@@ -20,13 +20,12 @@ class TabBarController: UITabBarController {
         guard let viewControllers = viewControllers else { return }
         
         for viewController in viewControllers {
-            guard let navigationVC = viewController as? UINavigationController else { return }
             
-            if let contactsFullNameTVC = navigationVC.topViewController as? ContactsFullNameTableViewController {
+            if let contactsFullNameTVC = viewController as? ContactsFullNameTableViewController {
                 contactsFullNameTVC.contacts = contacts
             }
             
-            if let contactsFullInfoTVC = navigationVC.topViewController as? ContactsFullInfoTableViewController {
+            if let contactsFullInfoTVC = viewController as? ContactsFullInfoTableViewController {
                 contactsFullInfoTVC.contacts = contacts
             }
         }
