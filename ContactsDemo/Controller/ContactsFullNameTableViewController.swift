@@ -26,4 +26,10 @@ class ContactsFullNameTableViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsContactVC = segue.destination as? DetailsContactViewController else { return }
+        guard let index = tableView.indexPathForSelectedRow?.row else { return }
+        detailsContactVC.contact = contacts[index]
+    }
 }
