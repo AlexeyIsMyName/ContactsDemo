@@ -17,6 +17,7 @@
 		E7A4D813289951A20045AB1C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4D812289951A20045AB1C /* TabBarController.swift */; };
 		E7A4D815289952C60045AB1C /* ContactsFullNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4D814289952C60045AB1C /* ContactsFullNameTableViewController.swift */; };
 		E7A4D817289953940045AB1C /* ContactsFullInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4D816289953940045AB1C /* ContactsFullInfoTableViewController.swift */; };
+		E7A4D819289961A30045AB1C /* DetailsContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4D818289961A30045AB1C /* DetailsContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E7A4D812289951A20045AB1C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E7A4D814289952C60045AB1C /* ContactsFullNameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFullNameTableViewController.swift; sourceTree = "<group>"; };
 		E7A4D816289953940045AB1C /* ContactsFullInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFullInfoTableViewController.swift; sourceTree = "<group>"; };
+		E7A4D818289961A30045AB1C /* DetailsContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				E7A4D812289951A20045AB1C /* TabBarController.swift */,
 				E7A4D814289952C60045AB1C /* ContactsFullNameTableViewController.swift */,
 				E7A4D816289953940045AB1C /* ContactsFullInfoTableViewController.swift */,
+				E7A4D818289961A30045AB1C /* DetailsContactViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				E7A4D80F2899484A0045AB1C /* Person.swift in Sources */,
 				E7A4D815289952C60045AB1C /* ContactsFullNameTableViewController.swift in Sources */,
 				E7A4D7F9289947180045AB1C /* SceneDelegate.swift in Sources */,
+				E7A4D819289961A30045AB1C /* DetailsContactViewController.swift in Sources */,
 				E7A4D817289953940045AB1C /* ContactsFullInfoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
