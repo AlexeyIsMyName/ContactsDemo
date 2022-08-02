@@ -17,17 +17,10 @@ class TabBarController: UITabBarController {
     }
     
     private func prepareVC() {
-        guard let viewControllers = viewControllers else { return }
+        let contactsFullNameTVC = viewControllers?.first as! ContactsFullNameTableViewController
+        let contactsFullInfoTVC = viewControllers?.last as! ContactsFullInfoTableViewController
         
-        for viewController in viewControllers {
-            
-            if let contactsFullNameTVC = viewController as? ContactsFullNameTableViewController {
-                contactsFullNameTVC.contacts = contacts
-            }
-            
-            if let contactsFullInfoTVC = viewController as? ContactsFullInfoTableViewController {
-                contactsFullInfoTVC.contacts = contacts
-            }
-        }
+        contactsFullNameTVC.contacts = contacts
+        contactsFullInfoTVC.contacts = contacts
     }
 }
