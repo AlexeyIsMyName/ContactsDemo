@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70C7D0928A3B59C00945F15 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70C7D0828A3B59C00945F15 /* Section.swift */; };
+		E70C7D0B28A3CA5500945F15 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70C7D0A28A3CA5500945F15 /* ExpandableHeaderView.swift */; };
 		E7A4D7F7289947180045AB1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4D7F6289947180045AB1C /* AppDelegate.swift */; };
 		E7A4D7F9289947180045AB1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4D7F8289947180045AB1C /* SceneDelegate.swift */; };
 		E7A4D7FE289947180045AB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A4D7FC289947180045AB1C /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E70C7D0828A3B59C00945F15 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E70C7D0A28A3CA5500945F15 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		E7A4D7F3289947180045AB1C /* ContactsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A4D7F6289947180045AB1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7A4D7F8289947180045AB1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E70C7D0428A3072D00945F15 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E70C7D0A28A3CA5500945F15 /* ExpandableHeaderView.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E70C7D0728A3B55900945F15 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				E70C7D0828A3B59C00945F15 /* Section.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
 		E7A4D7EA289947180045AB1C = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +89,8 @@
 				E7A4D80D289947C80045AB1C /* Model */,
 				E7A4D80A289947880045AB1C /* View */,
 				E7A4D80B289947910045AB1C /* Controller */,
+				E70C7D0428A3072D00945F15 /* TableViewCell */,
+				E70C7D0728A3B55900945F15 /* Section */,
 				E7A4D80C2899479D0045AB1C /* SupportingFiles */,
 				E7A4D7FF2899471A0045AB1C /* Assets.xcassets */,
 			);
@@ -189,9 +211,11 @@
 				E7A4D7F7289947180045AB1C /* AppDelegate.swift in Sources */,
 				E7A4D813289951A20045AB1C /* TabBarController.swift in Sources */,
 				E7A4D80F2899484A0045AB1C /* Person.swift in Sources */,
+				E70C7D0928A3B59C00945F15 /* Section.swift in Sources */,
 				E7A4D815289952C60045AB1C /* ContactsFullNameTableViewController.swift in Sources */,
 				E7A4D7F9289947180045AB1C /* SceneDelegate.swift in Sources */,
 				E7A4D819289961A30045AB1C /* DetailsContactViewController.swift in Sources */,
+				E70C7D0B28A3CA5500945F15 /* ExpandableHeaderView.swift in Sources */,
 				E7A4D817289953940045AB1C /* ContactsFullInfoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

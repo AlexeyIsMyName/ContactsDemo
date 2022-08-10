@@ -21,6 +21,6 @@ class TabBarController: UITabBarController {
         let contactsFullInfoTVC = viewControllers?.last as! ContactsFullInfoTableViewController
         
         contactsFullNameTVC.contacts = contacts
-        contactsFullInfoTVC.contacts = contacts
+        contactsFullInfoTVC.sections = Section.getSections(persons: contacts)
     }
 }
